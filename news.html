@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--移动端和pc端各版本浏览器兼容-->
+    <title>新闻页</title>
+</head>
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="main.css">
+<!--创建自己的css样式以便覆盖引入的库文件样式-->
+<body>
+
+    <div class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="https://www.bilibili.com/video/av21061574?from=search&seid=17225233772752021614"></a>
+                <!--图片文件一定要是跟html是同一级的目录才可直接引用，向上一级，在地址栏前加../-->
+            </div>
+            <label id="toggle-label" class="visible-xs-inline-block" for="toggle-checkbox">导航栏</label>
+            <!--映射下面的，将其隐藏，美观-->
+            <input class="hidden" id="toggle-checkbox" type="checkbox">
+            <!--只用css完成JS效果，提高运行效率，单一小功能，后面有配合的样式-->
+            <div class="hidden-xs">
+                <!--在超小屏幕下隐藏-->
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="news.html">首页</a></li>
+                    <li><a href="news.html">网站</a></li>
+                    <li><a href="news.html">影片</a></li>
+                    <li><a href="news.html">小说</a></li>
+                    <li><a href="news.html">视频</a></li>
+                    <li><a href="news.html">交友</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html">登录</a></li>
+                    <li><a href="signup.html">注册</a></li>
+                </ul>
+                <!--注意一定要在navbar-header的结构之外，才能完成指定的样式-->
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="col-md-8">
+            <h1 class="news-title">六安舒城某一老师，因帅气逼人，被女学生迷奸。据了解，该男老师满嘴骚话，行为放诞不羁，看到女学生面目清秀，现情绪稳定</h1>
+            <!--搜索引擎，h1爬取权重较高-->
+            <div class="new-info">10w阅读 . 2分钟之前发布 
+                <div class="label label-default">教育</div>
+                <div class="label label-default">情感</div>
+                <div class="label label-default">社会</div>
+            </div>
+            <div class="news-content">
+                <blockquote>
+                    <p>文章概括：六安舒城英语老师案，判刑</p>
+                </blockquote>
+        　    　<div>要说起今年最牵动人心的案子就要数祝老师案了，这个案子从刚过完年就开始庭审，但是直到现在也没有一个定论。</div>
+                <img src="appImage/003.jpg">
+                <div><br>从大家纷纷指责高云翔出轨，到疑似受害人张曦“仙人跳”，不得不说高云翔案简直要比一些电视剧还要好看就在8月30号，澳洲当地时间9时35分左右，高云翔在律师及警方的陪同下抵达现场，其妻子董璇没有出现。</div>
+                <div>可以看到在进入法庭之前的高云翔面容憔悴，和身边两个高大威武的保镖形成了鲜明的对比，这也是高云翔极少的出现在庭审现场，之前几乎都是以视频的形式出现。<br/></div>　  
+                <div>根据法院的公告显示，高云翔的案件被安排在了第15个，但是据了解，实际庭审是往前推了一段时间，在当地时间10时02分，高云翔走出了法院，高云翔出庭后比较精神，偶尔还会眼带笑意，看来高云翔对于这次庭审的结果比较满意.</div>   
+                <div><br>而据知情人爆料，在这次的庭审中，仅持续了大约两三分钟，此前传闻会出庭的证人并未出现，庭上也没有提交实质性的证据，并没有之前谣言的张曦在酒店的视频也没有出现，可能是谣言或者是出现了一些新的变故，法官称将用三周的时间来回顾指控，下一     次开庭时间是9月28日。</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="side-bar-card">
+                <div class="card-title">猜你喜欢</div>
+                <div class="card-body">
+                    <div class="list">
+                        <div class="item clearfix">
+                            <div class="col-xs-5 clear-image-padding">
+                                <img src="https://dummyimage.com/600x400/666/ccc">
+                            </div>
+                            <div class="col-xs-7">
+                                <div class="title">美女大学生找你聊天</div>
+                                <div class="dest">300w阅读 100w评论</div>
+                            </div>
+                        </div>
+                        <div class="item clearfix">
+                            <div class="col-xs-5 clear-image-padding">
+                                <img src="https://dummyimage.com/600x400/666/ccc">
+                            </div>
+                            <div class="col-xs-7">
+                                <div class="title">美女大学生找你聊天</div>
+                                <div class="dest">300w阅读 100w评论</div>
+                            </div>
+                        </div>
+                        <div class="item clearfix">
+                            <div class="col-xs-5 clear-image-padding">
+                                <img src="https://dummyimage.com/600x400/666/ccc">
+                            </div>
+                            <div class="col-xs-7">
+                                <div class="title">美女大学生找你聊天</div>
+                                <div class="dest">300w阅读 100w评论</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="side-bar-card ">
+                <div class="card-title">老哥，我懂你系列</div>
+                <div class="card-body">
+                    <div class="list">
+                        <div class="item">
+                            <div class="title">祝老师包养的女大学生，为何如此貌美如花</div>
+                            <div class="desc">300w点赞，20w评论</div>
+                        </div>
+                        <div class="item">
+                            <div class="title">祝老师包养的女大学生，为何如此貌美如花</div>
+                            <div class="desc">300w点赞，20w评论</div>
+                        </div>
+                        <div class="item">
+                            <div class="title">祝老师包养的女大学生，为何如此貌美如花</div>
+                            <div class="desc">300w点赞，20w评论</div>
+                        </div>
+                        <div class="item">
+                            <div class="title">祝老师包养的女大学生，为何如此貌美如花</div>
+                            <div class="desc">300w点赞，20w评论</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        @2018 豪哥头条 中国互联网举报中心 京ICP证1401号 京ICP备忘135255号
+    </div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--移动端和pc端各版本浏览器兼容-->
+    <title>豪哥头条</title>
+</head>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!--创建自己的css样式以便覆盖引入的库文件样式-->
+<body>
+      <div class="navbar navbar-default">
+          <div class="container">
+              <div class="navbar-header">
+                  <a class="navbar-brand" href="https://www.bilibili.com/video/av21061574?from=search&seid=17225233772752021614"></a>
+                  <!--图片文件一定要是跟html是同一级的目录才可直接引用，向上一级，在地址栏前加../-->
+              </div>
+              <label id="toggle-label" class="visible-xs-inline-block" for="toggle-checkbox">导航栏</label>
+              <!--映射下面的，将其隐藏，美观-->
+              <input class="hidden" id="toggle-checkbox" type="checkbox">
+              <!--只用css完成JS效果，提高运行效率，单一小功能，后面有配合的样式-->
+              <div class="hidden-xs">
+                  <!--在超小屏幕下隐藏-->
+                  <ul class="nav navbar-nav">
+                      <li class="active"><a href="news.html">首页</a></li>
+                      <li><a href="news.html">网站</a></li>
+                      <li><a href="news.html">影片</a></li>
+                      <li><a href="news.html">小说</a></li>
+                      <li><a href="news.html">视频</a></li>
+                      <li><a href="news.html">交友</a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                      <li><a href="login.html">登录</a></li>
+                      <li><a href="signup.html">注册</a></li>
+                  </ul>
+                  <!--注意一定要在navbar-header的结构之外，才能完成指定的样式-->
+              </div>
+          </div>
+      </div>
+      
+      <div class="container">
+          <div class="row">
+              
+              <!--用来抵消，下面栅格的内部，跟标题保持一样的样式-->
+              <div class="col-sm-2">
+                  <div class="hidden-xs list-group side-bar">
+                      <a href="https://www.bilibili.com/video/av21061574?from=search&seid=17225233772752021614" class="list-group-item active">澳门赌场</a>
+                      <a href="https://www.bilibili.com/video/av21061574?from=search&seid=17225233772752021614" class="list-group-item">美女真人</a>
+                      <a href="https://www.bilibili.com/video/av21061574?from=search&seid=17225233772752021614" class="list-group-item">在线发牌</a>
+                      <a href="news.html" class="list-group-item">快速到账</a>
+                      <a href="news.html" class="list-group-item">赔率感人</a>
+                      <a href="news.html" class="list-group-item">官方背景</a>
+                      <a href="news.html" class="list-group-item">隐私保密</a>
+                      <a href="news.html" class="list-group-item">绝对可靠</a>
+                      <a href="news.html" class="list-group-item">快来啊！</a>
+                  </div>
+              </div>
+              <div class="col-sm-7">
+                  <div class="news-list">
+                      <div class="news-list-item clearfix">
+                          <!--一定要清除浮动，不然排版不规范-->
+                          <div class="col-xs-5">
+                              <img src="appImage/003.jpg" alt="不知名男教师">
+                          </div>
+                          <div class="col-xs-7">
+                              <a href="news.html" class="title">六安舒城某一老师，因帅气逼人，被女学生迷奸。据了解，该男老师满嘴骚话，行为放诞不羁，看到女学生面目清秀，现情绪稳定</a>
+                              <div class="info">
+                                  <span><span class="author"><img src="appImage/author.jpg" alt="头像"></span>祝老板写</span>.
+                                  <span>25w阅读</span>.
+                                  <span>5w评论</span>.
+                                  <span>两天前</span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="news-list-item clearfix">
+                          <!--一定要清除浮动，不然排版不规范-->
+                          <div class="col-xs-5">
+                              <img src="appImage/006.jpg" alt="不知名男教师">
+                          </div>
+                          <div class="col-xs-7">
+                              <a href="news.html" class="title">突变：前天六安舒城祝姓男子，被迷奸事件变得扑朔迷离。某一网友，在今天微博上放出祝姓老师被捕时照片</a>
+                              <div class="info">
+                                  <span><span class="author"><img src="appImage/author.jpg" alt="头像"></span>祝老板写</span>.
+                                  <span>38w阅读</span>.
+                                  <span>8w评论</span>.
+                                  <span>一天前</span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="news-list-item clearfix">
+                          <!--一定要清除浮动，不然排版不规范-->
+                          <div class="col-xs-5">
+                              <img src="appImage/2-2.jpg" alt="不知名男教师">
+                          </div>
+                          <div class="col-xs-7">
+                              <a href="news.html" class="title">持续报道：该六安舒城老师，在校期间，经常在寝室室友中间，发表不正当言论，疑有犯罪冲动</a>
+                              <div class="info">
+                                  <span><span class="author"><img src="appImage/author.jpg" alt="头像"></span>祝老板写</span>.
+                                  <span>51w阅读</span>.
+                                  <span>26w评论</span>.
+                                  <span>两小时前</span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="news-list-item clearfix">
+                          <div class="col-xs-5">
+                              <img src="appImage/2-4.jpg" alt="不知名男教师">
+                          </div>
+                          <div class="col-xs-7">
+                              <a href="news.html" class="title">解读：为何在2018年如此频繁的爆出老师性侵案件，到底是人性的扭曲还是道德的沦丧</a>
+                              <div class="info">
+                                  <span><span class="author"><img src="appImage/author.jpg" alt="头像"></span>祝老板写</span>.
+                                  <span>25w阅读</span>.
+                                  <span>5w评论</span>.
+                                  <span>2分钟前</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-sm-3">
+                  <div class="search-bar">
+                      <input type="search" class="form-control" placeholder="搜索本网站">
+                  </div>
+                  <div class="side-bar-card police clearfix">
+                      <!--清除浮动-->
+                      <div class="col-xs-5">
+                          <img src="appImage/1-1.png" alt="举报图片">
+                      </div>
+                      <div class="col-xs-7">
+                          <div class="note">绿色上网</div>
+                          <div>不良信息举报专栏</div>
+                          <div>举报电话：888888</div>
+                      </div>
+                  </div>
+                  <div class="side-bar-card ">
+                      <div class="card-title">老哥，我懂你系列</div>
+                      <div class="card-body">
+                          <div class="list">
+                              <div class="item">
+                                  <div class="title">祝老师包养的女大学生，为何如此貌美如花</div>
+                                  <div class="desc">300w点赞，20w评论</div>
+                              </div>
+                              <div class="item">
+                                  <div class="title">祝老师包养的女大学生，为何如此貌美如花</div>
+                                  <div class="desc">300w点赞，20w评论</div>
+                              </div>
+                              <div class="item">
+                                  <div class="title">祝老师包养的女大学生，为何如此貌美如花</div>
+                                  <div class="desc">300w点赞，20w评论</div>
+                              </div>
+                              <div class="item">
+                                  <div class="title">祝老师包养的女大学生，为何如此貌美如花</div>
+                                  <div class="desc">300w点赞，20w评论</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="footer">
+          @2018 豪哥头条 中国互联网举报中心 京ICP证1401号 京ICP备忘135255号
+      </div>
+</body>
+</html>

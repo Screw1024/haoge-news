@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--移动端和pc端各版本浏览器兼容-->
+    <title>登录页面</title>
+</head>
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="main.css">
+<!--创建自己的css样式以便覆盖引入的库文件样式-->
+<body>
+
+    <div class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="https://www.bilibili.com/video/av21061574?from=search&seid=17225233772752021614"></a>
+                <!--图片文件一定要是跟html是同一级的目录才可直接引用，向上一级，在地址栏前加../-->
+            </div>
+            <label id="toggle-label" class="visible-xs-inline-block" for="toggle-checkbox">导航栏</label>
+            <!--映射下面的，将其隐藏，美观-->
+            <input class="hidden" id="toggle-checkbox" type="checkbox">
+            <!--只用css完成JS效果，提高运行效率，单一小功能，后面有配合的样式-->
+            <div class="hidden-xs">
+                <!--在超小屏幕下隐藏-->
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="news.html">首页</a></li>
+                    <li><a href="news.html">网站</a></li>
+                    <li><a href="news.html">影片</a></li>
+                    <li><a href="news.html">小说</a></li>
+                    <li><a href="news.html">视频</a></li>
+                    <li><a href="news.html">交友</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html">登录</a></li>
+                    <li><a href="signup.html">注册</a></li>
+                </ul>
+                <!--注意一定要在navbar-header的结构之外，才能完成指定的样式-->
+            </div>
+        </div>
+    </div>
+    <div class="container container-small">
+        <h1>登录
+            <small>没有账户？<a href="signup.html">注册</a></small>
+        </h1>
+        <from>
+            <div class="form-group">
+                <label>用户名/手机/邮箱</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>密码</label>
+                <input type="password" class="form-control">
+            </div>
+            <div class="form-group">
+               <button type="submit" class="btn btn-primary btn-block">提交</button>
+            </div>
+            <div class="form-group">
+                <a href="#">忘记密码</a>
+            </div>
+        </from>
+    </div>
+
+    <div class="footer">
+        @2018 豪哥头条 中国互联网举报中心 京ICP证1401号 京ICP备忘135255号
+    </div>
+</body>
