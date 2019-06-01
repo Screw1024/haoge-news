@@ -1,5 +1,5 @@
 # haoge-news
-bootstrap创建的新闻网站—豪哥新闻
+bootstrap创建的新闻网站——豪哥新闻
 
 #### 前言
    练习bootstrap时创建的项目，一个简单的新闻静态网页 
